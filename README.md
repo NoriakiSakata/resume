@@ -6,15 +6,14 @@
 
 職務経歴書は複数のファイルに分割して`content/`ディレクトリで管理します：
 
-- `content/main.md` - 基本情報と自身の概要
-- `content/career_vision.md` - キャリアビジョン
-- `content/outputs.md` - GitHubやブログURLなどの成果物
+- `content/main.md` - 基本情報と職務要約
+- `content/projects/project_*.md` - 職務経歴（プロジェクトごとに分割、数字の大きい順に結合）
 - `content/skills.md` - 言語・フレームワークの経験年数など
-- `content/projects/project_1.md` - プロジェクト1の詳細
-- `content/projects/project_2.md` - プロジェクト2の詳細
-- `content/projects/project_*.md` - その他のプロジェクト（任意の数だけ追加可能）
+- `content/career_vision.md` - キャリアビジョン
+- `content/future_skills.md` - 今後身に付けたい技術
+- `content/outputs.md` - GitHubやブログURLなどの成果物
 
-PDF化する際は、これらのファイルが自動的に結合されて1つのPDFファイルが生成されます。
+PDF化する際は、これらのファイルが自動的に結合されて1つのPDFファイルが生成されます。プロジェクトファイルは数字の大きい順（最新のプロジェクトが先）に結合されます。
 
 ## 使い方
 
@@ -22,8 +21,14 @@ PDF化する際は、これらのファイルが自動的に結合されて1つ�
 
 `content/`ディレクトリ内の各マークダウンファイルを編集して職務経歴書の内容を更新してください。
 
-- 新しいプロジェクトを追加する場合は、`content/projects/project_3.md`、`content/projects/project_4.md` のようにファイルを作成してください
-- ファイル名は `project_*.md` のパターンに従ってください（ワークフローが自動的に検出します）
+- **基本情報**: `content/main.md` を編集
+- **職務経歴**: `content/projects/project_*.md` を編集
+  - 新しいプロジェクトを追加する場合は、`content/projects/project_6.md`、`content/projects/project_7.md` のようにファイルを作成してください
+  - ファイル名は `project_*.md` のパターンに従ってください（ワークフローが自動的に検出し、数字の大きい順に結合します）
+- **スキル**: `content/skills.md` を編集
+- **キャリアビジョン**: `content/career_vision.md` を編集
+- **今後身に付けたい技術**: `content/future_skills.md` を編集
+- **成果物**: `content/outputs.md` を編集
 
 ### 2. ローカルでPDFを生成する場合
 
@@ -82,14 +87,18 @@ npm run clean
 ```
 .
 ├── content/               # マークダウンファイルのディレクトリ
-│   ├── main.md           # 基本情報と自身の概要
-│   ├── career_vision.md  # キャリアビジョン
-│   ├── outputs.md        # GitHubやブログURLなど
+│   ├── main.md           # 基本情報と職務要約
+│   ├── projects/         # プロジェクトファイルのディレクトリ
+│   │   ├── project_1.md  # プロジェクト1（最古）
+│   │   ├── project_2.md  # プロジェクト2
+│   │   ├── project_3.md  # プロジェクト3
+│   │   ├── project_4.md  # プロジェクト4
+│   │   ├── project_5.md  # プロジェクト5（最新）
+│   │   └── project_*.md  # その他のプロジェクト（任意）
 │   ├── skills.md         # スキル・経験年数
-│   └── projects/         # プロジェクトファイルのディレクトリ
-│       ├── project_1.md  # プロジェクト1
-│       ├── project_2.md  # プロジェクト2
-│       └── project_*.md  # その他のプロジェクト（任意）
+│   ├── career_vision.md  # キャリアビジョン
+│   ├── future_skills.md  # 今後身に付けたい技術
+│   └── outputs.md        # GitHubやブログURLなど
 ├── scripts/
 │   └── build-pdf.js      # PDF生成スクリプト
 ├── package.json          # npm設定ファイル
