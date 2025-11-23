@@ -105,6 +105,9 @@ async function buildPdf() {
           printBackground: true,
         },
         stylesheet: stylesheetFile,
+        launch_options: {
+          args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        },
       }
     );
 
