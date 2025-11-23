@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "職務経歴書のPDF生成",
+  "scripts": {
+    "build": "node scripts/build-pdf.js",
+    "clean": "rm -f resume.pdf"
+  },
+  "keywords": [
+    "resume",
+    "pdf",
+    "markdown"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "md-to-pdf": "^5.2.3",
+    "glob": "^10.3.10"
+  }
+}
+
