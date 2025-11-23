@@ -59,8 +59,11 @@ async function buildPdf() {
 
     // スタイルシートを一時ファイルに書き込み
     const stylesheet = `
+      * {
+        font-family: "Noto Sans CJK JP", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
+      }
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", Meiryo, sans-serif;
+        font-family: "Noto Sans CJK JP", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
         font-size: 11pt;
         line-height: 1.6;
       }
