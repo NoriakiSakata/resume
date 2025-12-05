@@ -3,6 +3,13 @@
 - [GitHub](https://github.com/NoriakiSakata)
 - [Zenn](https://zenn.dev/enjoy_nori)
 
+### GitHubでの活動
+- **技術的な実験や学習**
+  - fastlane_deploy_to_app_distribution: テストアプリ配布
+  - riverpod_generator_test: Riverpodのジェネレータ機能の検証
+  - flutter_mvvm_unit_test: MVVM設計パターンをriverpodで実装した場合のユニットテストコード検証
+  - その他UIUXモックを実験的に作成したりなど
+
 ### 技術ブログ
 学生時代よりエンジニアコミュニティに所属し、定期的に技術ブログを執筆しています。  
 [コミュニティプロフィール](https://www.kamo-it.org/member/Nori/)
@@ -18,8 +25,6 @@
 
 ※アプリのソースコードは公開しておりませんが、実際の動作や機能は上記リンクから確認可能です。
 
-#### 内容と見てほしいポイント
-
 - **技術的ポイント / 実装例**
   - **モバイルアプリ（Flutter）**
     - サブスクリプション機能（RevenueCat）
@@ -27,12 +32,6 @@
     - GPT API × Supabaseベクトル検索による自然言語検索チャットボット
     - プッシュ通知（Firebase Messaging）
     - ログ収集 / 分析（Firebase Analytics、API Gateway + Lambda + BigQuery）
-    - アンケート機能によるユーザーフィードバック反映
   - **Web版（Next.js）**
-    - ショップ情報表示
     - App RouterやUIフレームワークの活用
-
-- **意識したこと**
-  - 業務では触れにくい技術（AWS、Go、Flutter最新パッケージ、Next.js App Router）を試す場として活用
-  - フロント・バックエンド・インフラ・AI技術を横断的に経験
-  - ユーザー体験を意識したUI設計と、運用効率化（ログ収集、通知）を重視
+    - API Routesによるフルスタック開発（フロントエンドとAPIを同一プロジェクトで開発）
