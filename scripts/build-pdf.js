@@ -15,6 +15,7 @@ const fileOrderAfterProjects = [
   'content/career_vision.md',
   'content/future_skills.md',
   'content/outputs.md',
+  'content/working_style.md',
 ];
 
 async function buildPdf() {
