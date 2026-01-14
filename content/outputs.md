@@ -3,16 +3,20 @@
 - [GitHub](https://github.com/NoriakiSakata)
 - [Zenn](https://zenn.dev/enjoy_nori)
 
-### GitHubでの活動
-- **技術的な実験や学習**
-  - fastlane_deploy_to_app_distribution: テストアプリ配布
-  - riverpod_generator_test: Riverpodのジェネレータ機能の検証
-  - flutter_mvvm_unit_test: MVVM設計パターンをriverpodで実装した場合のユニットテストコード検証
-  - その他UIUXモックを実験的に作成したりなど
+### GitHub
+主にUIUXやライブラリの技術検証
 
 ### 技術ブログ
+
+- コミュニティ
 学生時代よりエンジニアコミュニティに所属し、定期的に技術ブログを執筆しています。  
 [コミュニティプロフィール](https://www.kamo-it.org/member/Nori/)
+
+- Zenn
+主に個人開発で試したことなどを執筆
+
+- X
+主に技術記事を引用した感想や意見を投稿
 
 ### 個人開発アプリ：Vintage Tracker
 - **概要**  
